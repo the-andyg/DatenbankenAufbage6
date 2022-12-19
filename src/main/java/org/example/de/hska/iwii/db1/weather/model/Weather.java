@@ -1,6 +1,6 @@
 package org.example.de.hska.iwii.db1.weather.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -39,9 +39,10 @@ public class Weather {
 	
 	/**
 	 * Liest das Datum aus, fuer das diese Wetterangabe gueltig ist.
+	 *
 	 * @return Datum, fuer das diese Wetterangabe gueltig ist.
 	 */
-	public Date getDate() {
+	public java.sql.Date getDate() {
 		return date;
 	}
 
